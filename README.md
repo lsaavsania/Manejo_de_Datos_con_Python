@@ -1,7 +1,5 @@
 # Manejo de Datos con Python
 
-## Inteligencia Artificial Aplicada --- Semana 05
-
 Este repositorio contiene el material práctico de la **Semana 05** del
 curso **Inteligencia Artificial Aplicada**, orientado al manejo de datos
 con Python mediante la librería **pandas**.
@@ -129,17 +127,13 @@ df["plazo_meses"].value_counts()
 Promedios agrupados por nivel de riesgo:
 
 ``` python
-df.groupby("riesgo")[
-    ["ingreso_mensual", "monto_solicitado", "deuda_mensual"]
-].mean()
+df.groupby("riesgo")[["ingreso_mensual", "monto_solicitado", "deuda_mensual"]].mean()
 ```
 
 Valores máximos agrupados por riesgo:
 
 ``` python
-df.groupby("riesgo")[
-    ["monto_solicitado", "ingreso_mensual"]
-].max()
+df.groupby("riesgo")[["monto_solicitado", "ingreso_mensual"]].max()
 ```
 
 ### 7. Tablas cruzadas
@@ -199,8 +193,3 @@ La guía propone ejercicios de:
 7.  Elaboración de tablas cruzadas.
 
 ------------------------------------------------------------------------
-
-**Facultad de Ingeniería**\
-**Asignatura:** Inteligencia Artificial Aplicada\
-**Periodo académico:** 2026-2\
-**Semana:** 05
